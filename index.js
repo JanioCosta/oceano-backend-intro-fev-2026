@@ -2,12 +2,13 @@ import express from 'express'
 
 const app = express()
 
-app.get('/', (req, res) => {
+/* app.get('/', (req, res) => {
   res.send('Olá, mundo!')
-}) // o servidor segue ignorando a segunda requisição e não retorna a 2a resposta.
+}) */ 
+// o servidor segue ignorando a segunda requisição e não retorna a 2a resposta.
 // alterada a rota da 1a requisição: definido '/'
 
-app.get('/', (req, res) => {
+app.get('/oi', (req, res) => {
   res.send('Hello World')
 }) // ordem das requisições invertidas.
 // alterada a rota da segunda requisição: definido '/hello'
