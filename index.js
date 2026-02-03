@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 app.get('/oi', (req, res) => {
   res.send('Olá, mundo!')
-})
+}) // o servidor segue ignorando a segunda requisição e não retorna a 2a resposta.
 
 app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000')
