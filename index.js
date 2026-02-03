@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 }) // ordem das requisições invertidas.
 // alterada a rota da segunda requisição: definido '/hello'
 // O servidor parece não aceitar acréscimos a '/', como em '/hello' ou '/oi'
-// utilizando a rota '/' na segunda chamada a get
+// utilizando a rota '/' na segunda chamada a app com o método get
 
 app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000')
